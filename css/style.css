@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Set a custom font-family */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #666;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* Media Queries for Tablet and Mobile Views */
+@media only screen and (max-width: 991px) {
+    .desktop {
+        width: 48%; /* Adjust width for tablet view */
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop {
+        width: 100%; /* Full width for mobile view */
+        float: none; /* Clear float for mobile view */
+    }
+}
