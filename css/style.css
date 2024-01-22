@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Optional: Set a custom font-family */
+    font-family: 'Arial', sans-serif; /* Optional: Set a custom font-family */
 }
 
 header {
@@ -8,13 +8,16 @@ header {
     color: white;
     text-align: center;
     padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle lift */
 }
 
 section {
-    border: 1px solid #000;
+    border: 1px solid #ddd;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 30px;
     padding: 15px;
+    border-radius: 8px; /* Add rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
 .section-title {
@@ -24,6 +27,23 @@ section {
     background-color: #666;
     color: white;
     padding: 5px 10px;
+    border-radius: 0 0 0 8px; /* Round the top-right corner */
+}
+
+/* Hover effect for sections */
+section:hover {
+    transform: scale(1.05); /* Enlarge the section on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+/* Add animations for section titles */
+.section-title {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover .section-title {
+    transform: translateY(0);
 }
 
 /* Media Queries for Tablet and Mobile Views */
@@ -40,3 +60,6 @@ section {
         float: none; /* Clear float for mobile view */
     }
 }
+
+
+
